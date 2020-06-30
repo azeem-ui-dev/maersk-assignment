@@ -1,0 +1,107 @@
+body {
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.clearfix {
+   content: "";
+   display: table;
+   clear: both;
+}
+.main {
+    width: 100%;
+}
+.btns {
+    margin: 10px auto;
+    text-align: center;
+}
+.btns button {
+    background-color: #72C3DC;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0;    
+    text-transform: uppercase;
+    box-shadow: 0 3px #2B8EAD;
+    font-size: 10px;
+    width: 80px;
+    padding: 10px;
+    margin: 10px 5px;
+}
+.list {
+    margin: 0 15px 15px;
+}
+ul.num-list {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+}
+ul.num-list li {    
+    color: #ffffff;
+    width: 100%;
+}
+ul.num-list li span {
+    background-color: #efefef;
+    display: block;
+    margin-left: 8px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+p.info {
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 960px) {
+  body {
+    background-color: #efefef;
+  }
+  .main {
+    width: auto;
+  }
+  .btns {
+    position: absolute;
+    left: 470px;
+  }
+  .btns button {
+    width: 130px;  
+    display: block;
+    margin-bottom: 20px;
+  }
+  .list {
+    width: 450px;
+    float: left;
+    margin: 0;
+  }
+  ul.num-list li {    
+    width: 150px;
+    height: 150px;
+    float: left;
+    font-size: 64px;  
+    display: flex; 
+  }
+  ul.num-list li span {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: inherit;
+    color: inherit;
+    padding: inherit;
+    margin: inherit;
+  }
+  p.info {
+    padding: 20px;
+    margin: 0;
+    clear: both;
+  } 
+}
